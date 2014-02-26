@@ -1,0 +1,47 @@
+<h3><span class="label label-default">Add Pos</span></h3>
+
+<div class="form-group" ng-controller="PosAddCtrl" ng-init="init()">
+
+
+    <alert ng-repeat="alert in alerts" type="alert.type" close="closeAlerts()" ng-show="isShowMessage" >{{alert.msg}}</alert>
+
+    <label>Position Title:</label>
+    <input type="text" class="form-control" ng-model="position.title">
+    <label>Description:</label>
+    <input type="text" class="form-control" ng-model="position.description">
+    <br>
+
+    <button class="btn btn-s btn-success" ng-click="saveNewPosition()">Save</button>
+    <button class="btn btn-s btn-danger" ng-click="clearForm()">Clear</button>
+
+    <button ng-click="changeLanguage('fr-FR')" translate="BUTTON_LANG_DE"></button>
+    <button ng-click="changeLanguage('en-EN')" translate="BUTTON_LANG_EN"></button>
+    <button ng-click="changeLanguage('ar-AE')" translate="BUTTON_LANG_EN"></button>
+
+    The attribute ones show from index.json
+    <p translate="HEADLINE"></p>
+    <p translate="BUTTON_LANG_DE"></p>
+
+    These two show from index.json
+    <p> {{'HEADLINE' | translate}} </p>
+    <p> {{'BUTTON_LANG_DE' | translate}} </p>
+
+
+    The attribute ones show from index.json
+    <p translate="HEADLINE"></p>
+    <p translate="BUTTON_LANG_DE"></p>
+
+    These two show from index.json
+    <p> {{'HEADLINE' | translate}} </p>
+    <p> {{'BUTTON_LANG_DE' | translate}} </p>
+
+
+
+    <!---->
+<!--    {{'HEADLINE' | translate}}-->
+    
+<!--    <p translate="HEADLINE"></p>-->
+<!--    <p translate="HEADLINE"></p>-->
+<!--    {{'BUTTON_LANG_DE' | translate}}-->
+
+</div>

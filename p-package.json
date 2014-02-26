@@ -1,0 +1,10 @@
+{
+  "name": "protractor-tests",
+  "version": "0.0.1",
+  "devDependencies": {
+    "protractor": "~0.17.0"
+  },
+  "scripts": {
+    "install": "./node_modules/protractor/bin/webdriver-manager update"
+  }
+}
